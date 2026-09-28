@@ -1,0 +1,28 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.5, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\0320j\AppData\Local\Python\pythoncore-3.14-64\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\0320j\Desktop\wireless-mobility-sim
+plugins: anyio-4.15.1
+collecting ... collected 19 items
+
+tests/test_ai_predictor.py::test_markov_predictor_returns_none_without_history PASSED [  5%]
+tests/test_ai_predictor.py::test_markov_predictor_predicts_most_frequent_next_cell PASSED [ 10%]
+tests/test_ai_predictor.py::test_markov_predictor_is_per_node PASSED     [ 15%]
+tests/test_ai_predictor.py::test_first_order_predictor_uses_exact_prev_current_pair PASSED [ 21%]
+tests/test_ai_predictor.py::test_first_order_predictor_falls_back_to_zero_order PASSED [ 26%]
+tests/test_ai_predictor.py::test_first_order_predictor_returns_none_without_any_history PASSED [ 31%]
+tests/test_ai_predictor.py::test_ai_algorithm_paging_falls_back_to_all_cells_when_no_prediction PASSED [ 36%]
+tests/test_ai_predictor.py::test_ai_algorithm_paging_narrows_to_predicted_cell_and_neighbors PASSED [ 42%]
+tests/test_session.py::test_init_session_assigns_ip_and_matches_domain PASSED [ 47%]
+tests/test_session.py::test_update_without_domain_change_does_not_reset PASSED [ 52%]
+tests/test_session.py::test_update_with_domain_change_triggers_reset PASSED [ 57%]
+tests/test_session.py::test_ip_addresses_are_unique_within_a_domain PASSED [ 63%]
+tests/test_session.py::test_repeated_domain_flip_flop_counts_each_reset PASSED [ 68%]
+tests/test_topology.py::test_create_hex_grid_cell_count PASSED           [ 73%]
+tests/test_topology.py::test_neighbors_are_symmetric PASSED              [ 78%]
+tests/test_topology.py::test_neighbor_count_within_hex_bounds PASSED     [ 84%]
+tests/test_topology.py::test_assign_domains_covers_every_cell_exactly_once PASSED [ 89%]
+tests/test_topology.py::test_nearest_cell_returns_closest PASSED         [ 94%]
+tests/test_topology.py::test_distance_to_cell_matches_euclidean PASSED   [100%]
+
+============================= 19 passed in 0.06s ==============================

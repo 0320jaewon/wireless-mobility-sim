@@ -1,0 +1,4 @@
+rows,cols,cell_size,num_domains,num_nodes,speed,num_steps,mobility_model,ho_threshold,lu_period,ho_timer,improved_lu_period,ho_threshold_predicted,ho_timer_predicted,ai_lu_period,call_arrival_prob,drop_threshold,pingpong_window,algorithm,signaling_overhead,ping_pong_ratio,call_drop_approx,ho_count,lu_count,paging_count,session_reset_count,session_continuity_rate,prediction_accuracy
+5,5,1.0,2,20,0.3,200,random_walk,5.0,10,3,20,2.5,1,20,0.05,60.0,5,ai,4663,0.05357142857142857,0.0215,56,180,188,4,0.999,0.6
+5,5,1.0,2,20,0.3,200,random_waypoint,5.0,10,3,20,2.5,1,20,0.05,60.0,5,ai,3483,0.004140786749482402,0.0165,483,180,177,71,0.98225,0.18543046357615894
+5,5,1.0,2,20,0.3,200,manhattan_grid,5.0,10,3,20,2.5,1,20,0.05,60.0,5,ai,3603,0.0,0.05725,332,180,180,50,0.9875,0.2558139534883721
